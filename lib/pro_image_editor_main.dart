@@ -1890,7 +1890,7 @@ class ProImageEditorState extends State<ProImageEditor> {
         canPop: _editPosition <= 0 || _doneEditing,
         onPopInvoked: (didPop) {
           if (_editPosition > 0 && !_doneEditing) {
-            closeWarning();
+            // closeWarning();
           }
         },
         child: LayoutBuilder(builder: (context, constraints) {
