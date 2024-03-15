@@ -1669,15 +1669,16 @@ class ProImageEditorState extends State<ProImageEditor> {
   /// This function allows the user to close the image editor without saving any changes or edits.
   /// It navigates back to the previous screen or closes the modal editor.
   void closeEditor() {
-    if (_editPosition <= 0) {
-      if (widget.onCloseEditor == null) {
-        Navigator.pop(context);
-      } else {
-        widget.onCloseEditor!.call();
-      }
-    } else {
-      closeWarning();
-    }
+    // if (_editPosition <= 0) {
+    //   if (widget.onCloseEditor == null) {
+    //     Navigator.pop(context);
+    //   } else {
+    //     widget.onCloseEditor!.call();
+    //   }
+    // } else {
+    //   closeWarning();
+    // }
+    Navigator.pop(context);
   }
 
   /// Displays a warning dialog before closing the image editor.
