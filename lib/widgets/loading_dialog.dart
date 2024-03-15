@@ -58,7 +58,8 @@ class LoadingDialog {
             padding: const EdgeInsets.only(top: 3.0),
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
-              mainAxisAlignment: MainAxisAlignment.start,
+              // mainAxisAlignment: MainAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
                   padding: const EdgeInsets.only(right: 20.0),
@@ -72,18 +73,16 @@ class LoadingDialog {
                     ),
                   ),
                 ),
-                Expanded(
-                  child: Text(
-                    _msg,
-                    style: platformTextStyle(
-                      context,
-                      designMode,
-                    ).copyWith(
-                      fontSize: 16,
-                      color: imageEditorTheme.loadingDialogTheme.textColor,
-                    ),
-                    textAlign: TextAlign.start,
+                Text(
+                  _msg,
+                  style: platformTextStyle(
+                    context,
+                    designMode,
+                  ).copyWith(
+                    fontSize: 16,
+                    color: imageEditorTheme.loadingDialogTheme.textColor,
                   ),
+                  textAlign: TextAlign.start,
                 ),
               ],
             ),
